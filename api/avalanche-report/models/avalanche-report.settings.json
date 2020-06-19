@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "avalanche_report_s",
+  "info": {
+    "name": "Avalanche Report "
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "Time": {
+      "type": "time",
+      "required": true
+    },
+    "Age": {
+      "type": "integer",
+      "required": true
+    },
+    "Size": {
+      "type": "decimal",
+      "required": true
+    },
+    "Elevation": {
+      "type": "string",
+      "required": true
+    },
+    "Trigger": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "string"
+    },
+    "Aspect": {
+      "type": "string"
+    },
+    "Depth": {
+      "type": "decimal"
+    },
+    "Width": {
+      "type": "decimal"
+    },
+    "Path": {
+      "type": "decimal"
+    },
+    "area": {
+      "via": "avalanche_reports",
+      "model": "area"
+    },
+    "Latitude": {
+      "type": "float",
+      "required": true
+    },
+    "Longitude": {
+      "type": "float",
+      "required": true
+    }
+  }
+}

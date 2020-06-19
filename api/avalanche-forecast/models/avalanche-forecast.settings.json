@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "avalanche_forecasts",
+  "info": {
+    "name": "Avalanche Forecast"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "danger_levels": {
+      "collection": "danger-level",
+      "via": "avalanche_forecast"
+    },
+    "mountain_areas": {
+      "collection": "mountain-area",
+      "via": "avalanche_forecast"
+    },
+    "areas": {
+      "collection": "area",
+      "via": "avalanche_forecast"
+    }
+  }
+}

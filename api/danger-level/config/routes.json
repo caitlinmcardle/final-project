@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/danger-levels",
+      "handler": "danger-level.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/danger-levels/count",
+      "handler": "danger-level.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/danger-levels/:id",
+      "handler": "danger-level.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/danger-levels",
+      "handler": "danger-level.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/danger-levels/:id",
+      "handler": "danger-level.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/danger-levels/:id",
+      "handler": "danger-level.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

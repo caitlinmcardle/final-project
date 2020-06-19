@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mountain-areas",
+      "handler": "mountain-area.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mountain-areas/count",
+      "handler": "mountain-area.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mountain-areas/:id",
+      "handler": "mountain-area.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mountain-areas",
+      "handler": "mountain-area.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mountain-areas/:id",
+      "handler": "mountain-area.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mountain-areas/:id",
+      "handler": "mountain-area.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

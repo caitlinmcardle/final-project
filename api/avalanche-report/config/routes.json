@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/avalanche-reports",
+      "handler": "avalanche-report.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/avalanche-reports/count",
+      "handler": "avalanche-report.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/avalanche-reports/:id",
+      "handler": "avalanche-report.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/avalanche-reports",
+      "handler": "avalanche-report.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/avalanche-reports/:id",
+      "handler": "avalanche-report.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/avalanche-reports/:id",
+      "handler": "avalanche-report.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

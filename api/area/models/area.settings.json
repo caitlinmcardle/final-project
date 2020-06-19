@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "areas",
+  "info": {
+    "name": "Area"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "avalanche_reports": {
+      "collection": "avalanche-report",
+      "via": "area"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "avalanche_forecast": {
+      "via": "areas",
+      "model": "avalanche-forecast"
+    }
+  }
+}

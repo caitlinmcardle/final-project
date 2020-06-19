@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "danger_levels",
+  "info": {
+    "name": "Danger Level"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "level": {
+      "type": "integer"
+    },
+    "advice": {
+      "type": "text"
+    },
+    "avalanche_forecast": {
+      "via": "danger_levels",
+      "model": "avalanche-forecast"
+    }
+  }
+}

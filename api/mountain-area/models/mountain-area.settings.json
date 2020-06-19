@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mountain_areas",
+  "info": {
+    "name": "Mountain Area"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "avalanche_forecast": {
+      "via": "mountain_areas",
+      "model": "avalanche-forecast"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/avalanche-forecasts",
+      "handler": "avalanche-forecast.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/avalanche-forecasts/count",
+      "handler": "avalanche-forecast.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/avalanche-forecasts/:id",
+      "handler": "avalanche-forecast.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/avalanche-forecasts",
+      "handler": "avalanche-forecast.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/avalanche-forecasts/:id",
+      "handler": "avalanche-forecast.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/avalanche-forecasts/:id",
+      "handler": "avalanche-forecast.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
