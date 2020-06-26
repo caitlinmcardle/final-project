@@ -18,9 +18,9 @@
     "advice": {
       "type": "text"
     },
-    "avalanche_forecast": {
-      "via": "danger_levels",
-      "model": "avalanche-forecast"
+    "avalanche_forecasts": {
+      "via": "danger_level",
+      "collection": "avalanche-forecast"
     }
   }
 }

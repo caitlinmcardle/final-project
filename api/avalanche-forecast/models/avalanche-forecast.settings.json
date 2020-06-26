@@ -9,17 +9,16 @@
     "timestamps": true
   },
   "attributes": {
-    "danger_levels": {
-      "collection": "danger-level",
-      "via": "avalanche_forecast"
+    "danger_level": {
+      "model": "danger-level",
+      "via": "avalanche_forecasts"
     },
-    "mountain_areas": {
-      "collection": "mountain-area",
-      "via": "avalanche_forecast"
+    "area": {
+      "model": "area",
+      "via": "avalanche_forecasts"
     },
-    "areas": {
-      "collection": "area",
-      "via": "avalanche_forecast"
+    "mountain_area": {
+      "type": "string"
     }
   }
 }

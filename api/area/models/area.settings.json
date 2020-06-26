@@ -19,9 +19,9 @@
     "Location": {
       "type": "string"
     },
-    "avalanche_forecast": {
-      "via": "areas",
-      "model": "avalanche-forecast"
+    "avalanche_forecasts": {
+      "via": "area",
+      "collection": "avalanche-forecast"
     }
   }
 }
